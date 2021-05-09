@@ -2,7 +2,10 @@ import os
 import telebot
 import yfinance as yf
 
-API_KEY = os.environ.get('MiracalBot_Telegram_API_KEY')
+#Api Key For Heroku
+API_KEY = os.environ["MiracalBot_Telegram_API_KEY"]
+
+#API_KEY = os.environ.get('MiracalBot_Telegram_API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
 
